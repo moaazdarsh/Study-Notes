@@ -1,8 +1,4 @@
----
-title: "Vibrations & Waves"
-format:
-  pdf
----
+
 
 ## Circular Motion:
 using polar coordinates is simpler for circular motion

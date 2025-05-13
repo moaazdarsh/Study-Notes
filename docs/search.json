@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "VW.html",
+    "href": "VW.html",
+    "title": "Vibrations & Waves",
+    "section": "",
+    "text": "using polar coordinates is simpler for circular motion so the following are some important kinematic definitions in polar coordinates and periodic motion.\nAngular Displacement \\(\\bar\\theta = \\bar\\theta_f - \\bar\\theta_i\\), measured in \\(rad\\).\nAngular Velocity \\(\\bar\\omega = \\frac{d\\bar\\theta}{dt}\\), measured in \\(rad/s\\).\nAngular Acceleration \\(\\bar\\alpha = \\frac{d\\bar\\omega}{dt}\\), measured in \\(rad/s^2\\).\nFrequency \\((f) = \\frac{no. \\: of \\: turns}{\\Delta t}\\)\nPeriodic time \\((T) = \\frac{2\\pi}{\\omega}= \\frac{1}f\\)"
+  },
+  {
+    "objectID": "VW.html#circular-motion",
+    "href": "VW.html#circular-motion",
+    "title": "Vibrations & Waves",
+    "section": "",
+    "text": "using polar coordinates is simpler for circular motion so the following are some important kinematic definitions in polar coordinates and periodic motion.\nAngular Displacement \\(\\bar\\theta = \\bar\\theta_f - \\bar\\theta_i\\), measured in \\(rad\\).\nAngular Velocity \\(\\bar\\omega = \\frac{d\\bar\\theta}{dt}\\), measured in \\(rad/s\\).\nAngular Acceleration \\(\\bar\\alpha = \\frac{d\\bar\\omega}{dt}\\), measured in \\(rad/s^2\\).\nFrequency \\((f) = \\frac{no. \\: of \\: turns}{\\Delta t}\\)\nPeriodic time \\((T) = \\frac{2\\pi}{\\omega}= \\frac{1}f\\)"
+  },
+  {
+    "objectID": "VW.html#forced-occillations",
+    "href": "VW.html#forced-occillations",
+    "title": "Vibrations & Waves",
+    "section": "Forced Occillations:",
+    "text": "Forced Occillations:\na spring system that is affected by an external force \\(F = F_0 cos(\\Omega t)\\) and a damping force \\(F_D = -rv\\) will be described by the following equation of motion.\n\\[\nm\\ddot{x}  + k_s x + r\\dot{x} = F_0cos(\\Omega t)\n\\]\nsolving this differential equation we get\n\\(x = Acos(\\Omega t - \\phi)\\), where \\(A(\\Omega) = \\frac{F_0}{\\sqrt{(\\omega_0^2 - \\Omega^2)^2 + (2\\alpha \\Omega)^2}}\\) and \\(\\phi = tan^{-1}( \\frac{2\\alpha \\Omega}{\\omega_0^2 - \\Omega^2})\\).\nthe frequency of applied force that will result in the greatest amplitude is \\(\\Omega_A = \\sqrt{\\omega_0^2 -2\\alpha^2}\\) and that maximum amplitude is \\(A = \\frac{F_0}{r \\sqrt{\\omega_0^2 -\\alpha^2}}\\).\nif we want the spring to oscillate at maximum velocity however, then \\(\\Omega = \\omega_0\\), the amplitude \\(A = \\frac{F_0}{r\\omega_0}\\), and \\(v_{max} = \\frac{F_0}r\\)."
+  },
+  {
+    "objectID": "VW.html#waves",
+    "href": "VW.html#waves",
+    "title": "Vibrations & Waves",
+    "section": "Waves:",
+    "text": "Waves:\nWaves can be classified based on three criteria, firstly:\nMechanical Waves: need a medium to propagate.\nElectromagnetic Waves: doesn’t need a medium.\nsecondly:\nTransverse: the vibration is perpendicular to wave propagation.\nLongitudinal: the vibration is parallel to wave propagation.\nand lastly, Travelling and Standing Waves.\n\nWave equation\nThe function of a wave moving in a line is \\(y = f(kx-\\omega t)\\), from this we can find the differential equation for wave motion.\n\\[\n\\frac{\\partial^2 y}{\\partial x^2} = \\frac{1}{v^2} \\frac{\\partial^2 y}{\\partial t^2}\n\\]\nHowever, we’re only concerned with sinusoidal waves which behave according to this equation.\n\\[\ny(x,t) = Acos(kx-\\omega t) = Acos(x-vt)\n\\]\nwhere \\(\\omega = \\frac{2\\pi}T\\) and \\(k = \\frac{2\\pi}\\lambda\\)"
+  }
+]
