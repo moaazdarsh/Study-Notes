@@ -129,16 +129,17 @@ window.Quarto = {
 <p>For a body attached to a spring which exerts a force <span class="math inline">\(F = -kx\)</span> the equation of motion is: <span class="math display">\[
 m \ddot{x} = -kx
 \]</span> once this differential equation is solved, the result will be able to describe the motion of the system.</p>
-<p>$x = Acos(t + ) $, where <span class="math inline">\(A\)</span> is the amplitude and <span class="math inline">\(\phi\)</span> is the phase at <span class="math inline">\(t = 0\)</span>.</p>
+<p><span class="math display">\[x = A \cos(\omega t + \phi)
+\]</span> where <span class="math inline">\(A\)</span> is the amplitude and <span class="math inline">\(\phi\)</span> is the phase at <span class="math inline">\(t = 0\)</span>.</p>
 </section>
 <section id="forced-occillations" class="level2">
 <h2 class="anchored" data-anchor-id="forced-occillations">Forced Occillations:</h2>
-<p>A spring system that is affected by an external force <span class="math inline">\(F = F_0 cos(\Omega t)\)</span> and a damping force <span class="math inline">\(F_D = -rv\)</span> will be described by the following equation of motion.</p>
+<p>A spring system that is affected by an external force <span class="math inline">\(F = F_0 \cos(\Omega t)\)</span> and a damping force <span class="math inline">\(F_D = -rv\)</span> will be described by the following equation of motion.</p>
 <p><span class="math display">\[
-m\ddot{x}  + k_s x + r\dot{x} = F_0cos(\Omega t)
+m\ddot{x}  + k_s x + r\dot{x} = F_0 \cos(\Omega t)
 \]</span></p>
 <p>solving this differential equation we get</p>
-<p><span class="math inline">\(x = Acos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\alpha \Omega)^2}}\)</span> and <span class="math inline">\(\phi = tan^{-1}( \frac{2\alpha \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
+<p><span class="math inline">\(x = A \cos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\alpha \Omega)^2}}\)</span> and <span class="math inline">\(\phi = \arctan( \frac{2\alpha \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
 <p>the frequency of applied force that will result in the greatest amplitude is <span class="math inline">\(\Omega_A = \sqrt{\omega_0^2 -2\alpha^2}\)</span> and that maximum amplitude is <span class="math inline">\(A = \frac{F_0}{r \sqrt{\omega_0^2 -\alpha^2}}\)</span>.</p>
 <p>if we want the spring to oscillate at maximum velocity however, then <span class="math inline">\(\Omega = \omega_0\)</span>, the amplitude <span class="math inline">\(A = \frac{F_0}{r\omega_0}\)</span>, and <span class="math inline">\(v_{max} = \frac{F_0}r\)</span>.</p>
 </section>
@@ -159,9 +160,22 @@ m\ddot{x}  + k_s x + r\dot{x} = F_0cos(\Omega t)
 \]</span></p>
 <p>However, we’re only concerned with sinusoidal waves which behave according to this equation.</p>
 <p><span class="math display">\[
-y(x,t) = Acos(kx-\omega t) = Acos[k(x-vt)]
+y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span></p>
+</section>
+</section>
+<section id="sound-waves" class="level2">
+<h2 class="anchored" data-anchor-id="sound-waves">Sound Waves:</h2>
+<p>this section will discuss multiple topics regarding sound waves.</p>
+<section id="sound-wave-intensity" class="level3">
+<h3 class="anchored" data-anchor-id="sound-wave-intensity">Sound Wave Intensity</h3>
+<p>Given a source of spherical waves operating at a power output <span class="math inline">\(P\)</span>.</p>
+<p><strong>intensity:</strong> <span class="math inline">\(I = \frac{P}A = \frac{P}{4 \pi r^2}\)</span></p>
+<p>Since sound waves are mechanical, longitudinal, and <em>spherical</em> waves; this equation applies to them.</p>
+<p><span class="math display">\[
+Moza
+\]</span></p>
 
 
 </section>
