@@ -152,8 +152,8 @@ m\ddot{x}  + k_s x + r\dot{x} = F_0 \cos(\Omega t)
 <p><strong>Transverse:</strong> the vibration is perpendicular to wave propagation.</p>
 <p><strong>Longitudinal:</strong> the vibration is parallel to wave propagation.</p>
 <p>and lastly, <strong>Travelling and Standing Waves</strong>.</p>
-<section id="wave-equation" class="level4">
-<h4 class="anchored" data-anchor-id="wave-equation">Wave equation</h4>
+<section id="wave-equation" class="level3">
+<h3 class="anchored" data-anchor-id="wave-equation">Wave equation</h3>
 <p>The function of a wave moving in a line is <span class="math inline">\(y = f(kx-\omega t)\)</span>, from this we can find the differential equation for wave motion.</p>
 <p><span class="math display">\[
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
@@ -173,7 +173,26 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p>Given a source of spherical waves operating at a power output <span class="math inline">\(P\)</span>.</p>
 <p><strong>intensity:</strong> <span class="math inline">\(I = \frac{P}A = \frac{P}{4 \pi r^2}\)</span></p>
 <p>Since sound waves are mechanical, longitudinal, and <em>spherical</em> waves; this equation applies to them; however, the human perception of sound is logarithmic.</p>
-<p><strong>Sound Intensity:</strong> <span class="math inline">\(\beta = 10 \log(\frac{I}{I_0})\)</span>, measured in decibel <span class="math inline">\((dB)\)</span>.</p>
+<p><strong>Sound Intensity:</strong> <span class="math inline">\(\beta = 10 \log(\frac{I}{I_0})\)</span>, where <span class="math inline">\(I_0 = 10^{-12}\)</span> and <span class="math inline">\(\beta\)</span> is measured in decibel <span class="math inline">\((dB)\)</span>.</p>
+</section>
+<section id="beats" class="level3">
+<h3 class="anchored" data-anchor-id="beats">Beats</h3>
+<p>When two waves with slightly different frequencies interfere, the difference between their phases continuously changes making them shift back and forth between constructive and destructive interference, so they produce a wave with periodically variable amplitude called a <em>Beat</em>.</p>
+<p>mathematically this can be represented by adding the two waves <span class="math inline">\(D_1 (x,t) = A \cos(\omega_1 t - kx)\)</span> and <span class="math inline">\(D_2 (x,t) = A \cos(\omega_2 t - kx)\)</span>.</p>
+<p>resulting in the following equation for beats:</p>
+<p><span class="math display">\[
+D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
+\]</span></p>
+<p>the frequency of the new sound is <span class="math inline">\(\frac{f_1 + f_2}2\)</span>, but the frequency of the beat is <span class="math inline">\(\frac{f_1 - f_2}2\)</span></p>
+</section>
+<section id="the-doppler-effect" class="level3">
+<h3 class="anchored" data-anchor-id="the-doppler-effect">The Doppler Effect</h3>
+<p>If the source of sound or the receiver is moving towards or away from the other then the perceived frequency is different, in the case of a moving receiver, it’s because the relative velocity between him and the wave is changed, in the case of a moving source, it’s because the motion changes the produced wave frequency.</p>
+<p><span class="math display">\[
+f' = f_0 \frac{v_0 \pm  v_r}{v_0 \mp v_s}
+\]</span></p>
+<p>Where <span class="math inline">\(v_0\)</span> is the wave speed (sound speed is around 343 m/s).</p>
+<p><strong>Note:</strong> <span class="math inline">\(v_r\)</span> is +ve when the receiver is approaching while <span class="math inline">\(v_s\)</span> is -ve when the source is approaching and vise versa.</p>
 <p><span class="math display">\[
 \newline
 \newline
