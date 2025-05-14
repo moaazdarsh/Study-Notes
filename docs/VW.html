@@ -158,7 +158,18 @@ m\ddot{x}  + k_s x + r\dot{x} = F_0 \cos(\Omega t)
 <p><span class="math display">\[
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
-<p>However, we’re only concerned with sinusoidal waves which behave according to this equation.</p>
+<p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
+<div id="e2c08b4d" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="VW_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can see from the equation that as time passes (as <span class="math inline">\(t\)</span> increases) the curve will shift to the right, mimicking the propagation of the wave.</p>
+<p>However, we’re mainly concerned with sinusoidal waves which behave according to this equation.</p>
 <p><span class="math display">\[
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
@@ -171,7 +182,7 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <section id="sound-wave-intensity" class="level3">
 <h3 class="anchored" data-anchor-id="sound-wave-intensity">Sound Wave Intensity</h3>
 <p>Given a source of spherical waves operating at a power output <span class="math inline">\(P\)</span>.</p>
-<p><strong>intensity:</strong> <span class="math inline">\(I = \frac{P}A = \frac{P}{4 \pi r^2}\)</span></p>
+<p><strong>Intensity:</strong> <span class="math inline">\(I = \frac{P}A = \frac{P}{4 \pi r^2}\)</span></p>
 <p>Since sound waves are mechanical, longitudinal, and <em>spherical</em> waves; this equation applies to them; however, the human perception of sound is logarithmic.</p>
 <p><strong>Sound Intensity:</strong> <span class="math inline">\(\beta = 10 \log(\frac{I}{I_0})\)</span>, where <span class="math inline">\(I_0 = 10^{-12}\)</span> and <span class="math inline">\(\beta\)</span> is measured in decibel <span class="math inline">\((dB)\)</span>.</p>
 </section>
