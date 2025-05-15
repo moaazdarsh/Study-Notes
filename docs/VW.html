@@ -139,7 +139,7 @@ m \ddot{x} = -kx
 m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \]</span></p>
 <p>solving this differential equation we get</p>
-<p><span class="math inline">\(x = A \cos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\gamma \Omega)^2}}\)</span> and <span class="math inline">\(\phi = \arctan( \frac{2\gamma \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
+<p><span class="math inline">\(x = A \cos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{m\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\gamma \Omega)^2}}\)</span> and <span class="math inline">\(\phi = \tan^{-1}( \frac{2\gamma \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
 <p>the frequency of applied force that will result in the greatest amplitude is <span class="math inline">\(\Omega_A = \sqrt{\omega_0^2 -2\gamma^2}\)</span> and that maximum amplitude is <span class="math inline">\(A = \frac{F_0}{r \sqrt{\omega_0^2 -\gamma^2}}\)</span>.</p>
 <p>if we want the spring to oscillate at maximum velocity however, then <span class="math inline">\(\Omega = \omega_0\)</span>, the amplitude <span class="math inline">\(A = \frac{F_0}{r\omega_0}\)</span>, and <span class="math inline">\(v_{max} = \frac{F_0}b\)</span>.</p>
 </section>
@@ -159,7 +159,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="974620ba" class="cell" data-execution_count="1">
+<div id="1a16473d" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -174,7 +174,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="c6ae869c" class="cell" data-execution_count="2">
+<div id="0e26e2c4" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -204,7 +204,7 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="ab1b4be9" class="cell" data-execution_count="3">
+<div id="78f4d1ea" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -219,14 +219,12 @@ D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \
 <h3 class="anchored" data-anchor-id="the-doppler-effect">The Doppler Effect</h3>
 <p>If either the source of sound or the receiver is moving towards or away from the other then the perceived frequency is different, in the case of a moving receiver, it’s because the relative velocity between him and the wave is changed, in the case of a moving source, it’s because the motion changes the produced wave frequency.</p>
 <p><span class="math display">\[
-f' = f_0 \frac{v_0 \pm  v_r}{v_0 \mp v_s}
+f' = f_0 \cdot  \frac{v_0 \pm  v_r}{v_0 \mp v_s}
 \]</span></p>
 <p>Where <span class="math inline">\(v_0\)</span> is the wave speed (sound speed is around 343 m/s).</p>
-<p><strong>Note:</strong> <span class="math inline">\(v_r\)</span> is +ve when the receiver is approaching while <span class="math inline">\(v_s\)</span> is -ve when the source is approaching and vise versa.</p>
+<p><strong>Note:</strong> <span class="math inline">\(v_r\)</span> is +ve when the receiver is approaching while <span class="math inline">\(v_s\)</span> is -ve when the source is approaching and vise versa. <br> <br></p>
 <p><span class="math display">\[
-\newline
-\newline
-Moza
+Moz\alpha
 \]</span></p>
 
 
