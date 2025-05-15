@@ -129,8 +129,29 @@ window.Quarto = {
 <p>For a body attached to a spring which exerts a force <span class="math inline">\(F = -kx\)</span> the equation of motion is: <span class="math display">\[
 m \ddot{x} = -kx
 \]</span> once this differential equation is solved, the result will be able to describe the motion of the system.</p>
-<p><span class="math display">\[x = A \cos(\omega t + \phi)
-\]</span> where <span class="math inline">\(A\)</span> is the amplitude and <span class="math inline">\(\phi\)</span> is the phase at <span class="math inline">\(t = 0\)</span>.</p>
+<p><span class="math display">\[
+x = A \cos(\omega t + \phi)
+\]</span> Where <span class="math inline">\(A\)</span> is the amplitude, <span class="math inline">\(\omega = \sqrt{\frac{k}m}\)</span> is the natural frequency and <span class="math inline">\(\phi\)</span> is the phase at <span class="math inline">\(t = 0\)</span>.</p>
+</section>
+<section id="damped-oscillations" class="level2">
+<h2 class="anchored" data-anchor-id="damped-oscillations">Damped Oscillations:</h2>
+<p>If a spring system oscillates in a viscous fluid it will be affected by a damping force <span class="math inline">\(F_d = -bv\)</span>, and then its equation of motion is going to be as follows.</p>
+<p><span class="math display">\[
+m \ddot{x} = -kx - b \dot{x}
+\]</span> As a result we can describe the displacement as a function.</p>
+<p><span class="math display">\[
+x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
+\]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
+<div id="caa96340" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="VW_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can see that since the amplitude is decreasing exponentially the wave function is enveloped by the amplitude function <span class="math inline">\(A = A_0 e^{-\gamma t}\)</span>.</p>
 </section>
 <section id="forced-oscillations" class="level2">
 <h2 class="anchored" data-anchor-id="forced-oscillations">Forced Oscillations:</h2>
@@ -159,11 +180,11 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="2d245815" class="cell" data-execution_count="1">
+<div id="6f7af43e" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="VW_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="VW_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -174,11 +195,11 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="03846401" class="cell" data-execution_count="2">
+<div id="87c0b5a0" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="VW_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="VW_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -204,11 +225,11 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="92afdc1b" class="cell" data-execution_count="3">
+<div id="1dcc8f3b" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="VW_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="VW_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
