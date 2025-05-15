@@ -136,12 +136,12 @@ m \ddot{x} = -kx
 <h2 class="anchored" data-anchor-id="forced-occillations">Forced Occillations:</h2>
 <p>A spring system that is affected by an external force <span class="math inline">\(F = F_0 \cos(\Omega t)\)</span> and a damping force <span class="math inline">\(F_D = -rv\)</span> will be described by the following equation of motion.</p>
 <p><span class="math display">\[
-m\ddot{x}  + k_s x + r\dot{x} = F_0 \cos(\Omega t)
+m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \]</span></p>
 <p>solving this differential equation we get</p>
-<p><span class="math inline">\(x = A \cos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\alpha \Omega)^2}}\)</span> and <span class="math inline">\(\phi = \arctan( \frac{2\alpha \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
-<p>the frequency of applied force that will result in the greatest amplitude is <span class="math inline">\(\Omega_A = \sqrt{\omega_0^2 -2\alpha^2}\)</span> and that maximum amplitude is <span class="math inline">\(A = \frac{F_0}{r \sqrt{\omega_0^2 -\alpha^2}}\)</span>.</p>
-<p>if we want the spring to oscillate at maximum velocity however, then <span class="math inline">\(\Omega = \omega_0\)</span>, the amplitude <span class="math inline">\(A = \frac{F_0}{r\omega_0}\)</span>, and <span class="math inline">\(v_{max} = \frac{F_0}r\)</span>.</p>
+<p><span class="math inline">\(x = A \cos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\gamma \Omega)^2}}\)</span> and <span class="math inline">\(\phi = \arctan( \frac{2\gamma \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
+<p>the frequency of applied force that will result in the greatest amplitude is <span class="math inline">\(\Omega_A = \sqrt{\omega_0^2 -2\gamma^2}\)</span> and that maximum amplitude is <span class="math inline">\(A = \frac{F_0}{r \sqrt{\omega_0^2 -\gamma^2}}\)</span>.</p>
+<p>if we want the spring to oscillate at maximum velocity however, then <span class="math inline">\(\Omega = \omega_0\)</span>, the amplitude <span class="math inline">\(A = \frac{F_0}{r\omega_0}\)</span>, and <span class="math inline">\(v_{max} = \frac{F_0}b\)</span>.</p>
 </section>
 <section id="waves" class="level2">
 <h2 class="anchored" data-anchor-id="waves">Waves:</h2>
@@ -159,7 +159,7 @@ m\ddot{x}  + k_s x + r\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="e2c08b4d" class="cell" data-execution_count="1">
+<div id="46e2016e" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
