@@ -159,7 +159,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="eff28af7" class="cell" data-execution_count="1">
+<div id="974620ba" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -168,13 +168,13 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 </div>
 </div>
 </div>
-<p>We can see from the equation that as time passes (as <span class="math inline">\(t\)</span> increases) the curve will shift to the right, mimicking the propagation of the wave.</p>
+<p>We can see from the equation that as time passes (as <span class="math inline">\(t\)</span> increases) the curve will shift to the right, simulating the propagation of the wave.</p>
 <p>However, we’re mainly concerned with sinusoidal waves which behave according to this equation.</p>
 <p><span class="math display">\[
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="276766e1" class="cell" data-execution_count="2">
+<div id="c6ae869c" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -204,11 +204,20 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<p>the frequency of the new sound is <span class="math inline">\(\frac{f_1 + f_2}2\)</span>, but the frequency of the beat is <span class="math inline">\(\frac{f_1 - f_2}2\)</span></p>
+<div id="ab1b4be9" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="VW_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>the frequency of the new sound is <span class="math inline">\(\frac{f_1 + f_2}2\)</span>, but the frequency of the beat is <span class="math inline">\(\frac{f_1 - f_2}2\)</span>.</p>
 </section>
 <section id="the-doppler-effect" class="level3">
 <h3 class="anchored" data-anchor-id="the-doppler-effect">The Doppler Effect</h3>
-<p>If the source of sound or the receiver is moving towards or away from the other then the perceived frequency is different, in the case of a moving receiver, it’s because the relative velocity between him and the wave is changed, in the case of a moving source, it’s because the motion changes the produced wave frequency.</p>
+<p>If either the source of sound or the receiver is moving towards or away from the other then the perceived frequency is different, in the case of a moving receiver, it’s because the relative velocity between him and the wave is changed, in the case of a moving source, it’s because the motion changes the produced wave frequency.</p>
 <p><span class="math display">\[
 f' = f_0 \frac{v_0 \pm  v_r}{v_0 \mp v_s}
 \]</span></p>
