@@ -121,8 +121,8 @@ window.Quarto = {
 <p><strong>Angular Displacement</strong> <span class="math inline">\(\bar\theta = \bar\theta_f - \bar\theta_i\)</span>, measured in <span class="math inline">\(rad\)</span>.</p>
 <p><strong>Angular Velocity</strong> <span class="math inline">\(\bar\omega = \frac{d\bar\theta}{dt}\)</span>, measured in <span class="math inline">\(rad/s\)</span>.</p>
 <p><strong>Angular Acceleration</strong> <span class="math inline">\(\bar\alpha = \frac{d\bar\omega}{dt}\)</span>, measured in <span class="math inline">\(rad/s^2\)</span>.</p>
-<p><strong>Frequency</strong> <span class="math inline">\((f) = \frac{no. \: of \: turns}{\Delta t}\)</span></p>
-<p><strong>Periodic time</strong> <span class="math inline">\((T) = \frac{2\pi}{\omega}= \frac{1}f\)</span></p>
+<p><strong>Frequency</strong> <span class="math inline">\(f = \frac{no. \: of \: turns}{\Delta t}\)</span></p>
+<p><strong>Periodic time</strong> <span class="math inline">\(T = \frac{2\pi}{\omega}= \frac{1}f\)</span></p>
 </section>
 <section id="simple-harmonic-motion" class="level2">
 <h2 class="anchored" data-anchor-id="simple-harmonic-motion">Simple Harmonic Motion:</h2>
@@ -138,11 +138,13 @@ x = A \cos(\omega t + \phi)
 <p>If a spring system oscillates in a viscous fluid it will be affected by a damping force <span class="math inline">\(F_d = -bv\)</span>, and then its equation of motion is going to be as follows.</p>
 <p><span class="math display">\[
 m \ddot{x} = -kx - b \dot{x}
-\]</span> As a result we can describe the displacement as a function.</p>
-<p><span class="math display">\[
+\]</span> There are three solutions to this deferential equation, we will only focus on two.</p>
+<section id="under-damping" class="level3">
+<h3 class="anchored" data-anchor-id="under-damping">Under Damping</h3>
+<p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="caa96340" class="cell" data-execution_count="1">
+<div id="67ea2b7a" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -152,6 +154,20 @@ x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 </div>
 </div>
 <p>We can see that since the amplitude is decreasing exponentially the wave function is enveloped by the amplitude function <span class="math inline">\(A = A_0 e^{-\gamma t}\)</span>.</p>
+<p>To describe the decrease in the amplitude of oscillation we will construct a new definition.</p>
+<p><strong>Logarithmic Decrement:</strong> <span class="math inline">\(\delta = \ln(\frac{A_n}{A_{n+1}}) = \gamma T_d\)</span></p>
+</section>
+<section id="critical-damping" class="level3">
+<h3 class="anchored" data-anchor-id="critical-damping">Critical Damping</h3>
+<p>In this case the damping is just enough to prevent oscillation, so the body will return to the rest position as fast as possible without overshooting.</p>
+<p><span class="math display">\[
+x = (d_1 + d_2 t)e^{-\gamma t}
+\]</span></p>
+<p>by differentiating we get:</p>
+<p><span class="math display">\[
+v = d_2 e^{- \gamma t} - (d_1 + d_2 t) \cdot \gamma e^{-\gamma t}
+\]</span></p>
+</section>
 </section>
 <section id="forced-oscillations" class="level2">
 <h2 class="anchored" data-anchor-id="forced-oscillations">Forced Oscillations:</h2>
@@ -180,7 +196,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="6f7af43e" class="cell" data-execution_count="2">
+<div id="f8e9fed8" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -195,7 +211,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="87c0b5a0" class="cell" data-execution_count="3">
+<div id="cfa0d222" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -225,7 +241,7 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="1dcc8f3b" class="cell" data-execution_count="4">
+<div id="f803ff59" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -243,7 +259,8 @@ D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \
 f' = f_0 \cdot  \frac{v_0 \pm  v_r}{v_0 \mp v_s}
 \]</span></p>
 <p>Where <span class="math inline">\(v_0\)</span> is the wave speed (sound speed is around 343 m/s).</p>
-<p><strong>Note:</strong> <span class="math inline">\(v_r\)</span> is +ve when the receiver is approaching while <span class="math inline">\(v_s\)</span> is -ve when the source is approaching and vise versa. <br> <br></p>
+<p><strong>Note:</strong> <span class="math inline">\(v_r\)</span> is +ve when the receiver is approaching while <span class="math inline">\(v_s\)</span> is -ve when the source is approaching and vise versa.</p>
+<p><br> <br></p>
 <p><span class="math display">\[
 Moz\alpha
 \]</span></p>
