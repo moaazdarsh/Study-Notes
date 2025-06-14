@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="67ea2b7a" class="cell" data-execution_count="1">
+<div id="b9f9a2a0" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -196,7 +196,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="f8e9fed8" class="cell" data-execution_count="2">
+<div id="9f242ffe" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -205,13 +205,13 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 </div>
 </div>
 </div>
-<p>We can see from the equation that as time passes (as <span class="math inline">\(t\)</span> increases) the curve will shift to the right, simulating the propagation of the wave.</p>
+<p>We can see from the equation that as time passes (as <span class="math inline">\(t\)</span> increases) the curve will shift to the right, simulating the propagation of the wave, the velocity of a wave is determined by its medium so in the case of a rope the velocity <span class="math inline">\(v = \sqrt{ \frac{T}{\mu} }\)</span>, where <span class="math inline">\(T\)</span> is the tension in the wire and <span class="math inline">\(\mu\)</span> is the mass per unit length.</p>
 <p>However, we’re mainly concerned with sinusoidal waves which behave according to this equation.</p>
 <p><span class="math display">\[
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="cfa0d222" class="cell" data-execution_count="3">
+<div id="da59cddf" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -241,7 +241,7 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="f803ff59" class="cell" data-execution_count="4">
+<div id="78d66ffa" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -260,13 +260,19 @@ f' = f_0 \cdot  \frac{v_0 \pm  v_r}{v_0 \mp v_s}
 \]</span></p>
 <p>Where <span class="math inline">\(v_0\)</span> is the wave speed (sound speed is around 343 m/s).</p>
 <p><strong>Note:</strong> <span class="math inline">\(v_r\)</span> is +ve when the receiver is approaching while <span class="math inline">\(v_s\)</span> is -ve when the source is approaching and vise versa.</p>
+</section>
+</section>
+<section id="standing-waves" class="level2">
+<h2 class="anchored" data-anchor-id="standing-waves">Standing Waves:</h2>
+<p>If a pulse travels from a light segment of the rope to a denser one it experiences a <span class="math inline">\(\pi \, rads\)</span> change in its phase which happens to prevent the rope from snapping apart, so when sending a sinusoidal wave through the rope, two opposing waves <span class="math inline">\(y_1\)</span> and <span class="math inline">\(y_2\)</span> will be generated with a phase difference <span class="math inline">\(\Delta \phi = \pi\)</span>, which can be described as follows. <span class="math display">\[
+y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi) = -2A \sin(kx) \sin(\omega t)
+\]</span></p>
 <p><br> <br></p>
 <p><span class="math display">\[
 Moz\alpha
 \]</span></p>
 
 
-</section>
 </section>
 </section>
 
