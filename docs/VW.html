@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="b9f9a2a0" class="cell" data-execution_count="1">
+<div id="aa392c2e" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -196,7 +196,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="9f242ffe" class="cell" data-execution_count="2">
+<div id="78a9be5a" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -211,7 +211,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="da59cddf" class="cell" data-execution_count="3">
+<div id="30528ba4" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -241,7 +241,7 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="78d66ffa" class="cell" data-execution_count="4">
+<div id="934e637e" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -264,15 +264,30 @@ f' = f_0 \cdot  \frac{v_0 \pm  v_r}{v_0 \mp v_s}
 </section>
 <section id="standing-waves" class="level2">
 <h2 class="anchored" data-anchor-id="standing-waves">Standing Waves:</h2>
-<p>If a pulse travels from a light segment of the rope to a denser one it experiences a <span class="math inline">\(\pi \, rads\)</span> change in its phase which happens to prevent the rope from snapping apart, so when sending a sinusoidal wave through the rope, two opposing waves <span class="math inline">\(y_1\)</span> and <span class="math inline">\(y_2\)</span> will be generated with a phase difference <span class="math inline">\(\Delta \phi = \pi\)</span>, which can be described as follows. <span class="math display">\[
+<p>If a pulse travels from a light segment of the rope to a denser one it experiences a <span class="math inline">\(\pi \, rads\)</span> change in its phase which happens to prevent the rope from snapping apart.</p>
+<p>so when sending a sinusoidal wave through the rope with both ends fixed, two opposing waves <span class="math inline">\(y_1\)</span> and <span class="math inline">\(y_2\)</span> will be generated with a phase difference <span class="math inline">\(\Delta \phi = \pi\)</span>, which can be described as follows. <span class="math display">\[
 y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi) = -2A \sin(kx) \sin(\omega t)
 \]</span></p>
+<p>The amplitude of oscillation of any point on the rope is given by <span class="math inline">\(2A \sin(kx)\)</span>, defining <em>nodes</em> as the points with no oscillation, and <em>anti-nodes</em> as the points with maximum oscillation. <span class="math display">\[
+2A\sin(kx) = 0 \rightarrow  kx = \frac{2\pi}\lambda x = m\pi
+\]</span></p>
+<p><span class="math inline">\(\therefore x = m\frac{\lambda}2\)</span> is the <span class="math inline">\((m+1)th\)</span> node, where m starts from zero.</p>
+<p><span class="math display">\[
+2A\sin(kx) = 2A \rightarrow  kx = \frac{2\pi}\lambda x = (m + \frac{1}2)\pi
+\]</span></p>
+<p><span class="math inline">\(\therefore x = (m + \frac{1}2) \frac{\lambda}2\)</span> is the <span class="math inline">\((m+1)th\)</span> anti-node.</p>
+<section id="harmonics" class="level3">
+<h3 class="anchored" data-anchor-id="harmonics">Harmonics</h3>
+<p>A standing wave between two fixed ends must have a node at both ends, so the first end must be at <span class="math inline">\(x = 0\)</span>, the <em>harmonic</em> of the standing wave depends on the position of the second end.</p>
+<p><strong>The Fundamental Harmonic</strong> occurs when the second end is at the second node and separated by <span class="math inline">\(L = \frac{\lambda}2\)</span> from the first end, which means there is only one loop, two nodes, and one anti-node.</p>
+<p><strong>The <span class="math inline">\(\textbf{nth}\)</span> Harmonic</strong> occurs when the second end is at the <span class="math inline">\((n+1)th\)</span> node and separated by <span class="math inline">\(L = \frac{n \lambda}2\)</span> from the first node, which means there are <span class="math inline">\(n\)</span> loops, <span class="math inline">\((n+1)\)</span> nodes, and <span class="math inline">\(n\)</span> anti-nodes.</p>
 <p><br> <br></p>
 <p><span class="math display">\[
-Moz\alpha
+M \phi z \alpha
 \]</span></p>
 
 
+</section>
 </section>
 </section>
 
