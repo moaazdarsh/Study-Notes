@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="aa392c2e" class="cell" data-execution_count="1">
+<div id="1fe9962d" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -182,9 +182,9 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 </section>
 <section id="waves" class="level2">
 <h2 class="anchored" data-anchor-id="waves">Waves:</h2>
-<p>Waves can be classified based on three criteria, firstly:</p>
+<p>Waves transfer energy from one place to another without the transmission of particles, they can be classified based on three criteria, firstly:</p>
 <p><strong>Mechanical Waves:</strong> need a medium to propagate.</p>
-<p><strong>Electromagnetic Waves:</strong> doesn’t need a medium.</p>
+<p><strong>Electromagnetic Waves:</strong> don’t need a medium.</p>
 <p>secondly:</p>
 <p><strong>Transverse:</strong> the vibration is perpendicular to wave propagation.</p>
 <p><strong>Longitudinal:</strong> the vibration is parallel to wave propagation.</p>
@@ -196,7 +196,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="78a9be5a" class="cell" data-execution_count="2">
+<div id="687f4ada" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -211,7 +211,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="30528ba4" class="cell" data-execution_count="3">
+<div id="b0c02ba5" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -221,6 +221,16 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 </div>
 </div>
 <p>Similarly to the pulse, as <span class="math inline">\(t\)</span> increases the wave propagates to the right.</p>
+</section>
+<section id="energy-and-power" class="level3">
+<h3 class="anchored" data-anchor-id="energy-and-power">Energy and Power</h3>
+<p>A continuous wave can be considered an infinite number of particles in simple harmonic motion, the energy of each particle <span class="math inline">\(E = \frac{1}2 k A^2\)</span>, where <span class="math inline">\(k = 4 \pi^2 m f^2\)</span>.</p>
+<p>Replacing <span class="math inline">\(m = \rho V = \rho S l\)</span>, where <span class="math inline">\(S\)</span> is the cross-sectional area, and <span class="math inline">\(l = vt\)</span>.</p>
+<p><span class="math display">\[
+E = 2 \pi^2 \rho S v t f^2 A^2
+\]</span> <span class="math display">\[
+P = 2 \pi^2 \rho S v f^2 A^2
+\]</span></p>
 </section>
 </section>
 <section id="sound-waves" class="level2">
@@ -241,7 +251,7 @@ y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="934e637e" class="cell" data-execution_count="4">
+<div id="e1b0865d" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -262,13 +272,20 @@ f' = f_0 \cdot  \frac{v_0 \pm  v_r}{v_0 \mp v_s}
 <p><strong>Note:</strong> <span class="math inline">\(v_r\)</span> is +ve when the receiver is approaching while <span class="math inline">\(v_s\)</span> is -ve when the source is approaching and vise versa.</p>
 </section>
 </section>
+<section id="interference" class="level2">
+<h2 class="anchored" data-anchor-id="interference">Interference:</h2>
+<p>The addition of multiple waves of phase differences <span class="math inline">\(\Delta \phi\)</span> is called <em>interference</em>, it can be constructive if <span class="math inline">\(\Delta \phi = 2\pi \cdot m\)</span>, or destructive if <span class="math inline">\(\Delta \phi = 2\pi \cdot (m + \frac{1}2)\)</span>.</p>
+<p>For two coherent waves which have taken different paths <span class="math inline">\(\Delta \phi = k \Delta r\)</span> is the phase difference between the two waves.</p>
+</section>
 <section id="standing-waves" class="level2">
 <h2 class="anchored" data-anchor-id="standing-waves">Standing Waves:</h2>
-<p>If a pulse travels from a light segment of the rope to a denser one it experiences a <span class="math inline">\(\pi \, rads\)</span> change in its phase which happens to prevent the rope from snapping apart.</p>
-<p>so when sending a sinusoidal wave through the rope with both ends fixed, two opposing waves <span class="math inline">\(y_1\)</span> and <span class="math inline">\(y_2\)</span> will be generated with a phase difference <span class="math inline">\(\Delta \phi = \pi\)</span>, which can be described as follows. <span class="math display">\[
-y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi) = -2A \sin(kx) \sin(\omega t)
+<p>If a pulse travels from a light segment of the rope to a denser one it experiences a <span class="math inline">\(\pi \; rads\)</span> change in its phase which happens to prevent the rope from snapping apart.</p>
+<p>So when sending a sinusoidal wave through the rope with both ends fixed, two opposing waves <span class="math inline">\(y_1\)</span> and <span class="math inline">\(y_2\)</span> will be generated with a phase difference <span class="math inline">\(\Delta \phi = \pi\)</span>, the interference of the two waves forms a standing wave which can be described as follows. <span class="math display">\[
+y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi)
+\]</span> <span class="math display">\[
+= -2A \sin(kx) \sin(\omega t)
 \]</span></p>
-<p>The amplitude of oscillation of any point on the rope is given by <span class="math inline">\(2A \sin(kx)\)</span>, defining <em>nodes</em> as the points with no oscillation, and <em>anti-nodes</em> as the points with maximum oscillation. <span class="math display">\[
+<p>A standing wave doesn’t propagate it only oscillates in place, and it assigns the amplitude of oscillation at any point on the rope by the function <span class="math inline">\(2A \sin(kx)\)</span>, defining <em>nodes</em> as the points with no oscillation, and <em>anti-nodes</em> as the points with maximum oscillation. <span class="math display">\[
 2A\sin(kx) = 0 \rightarrow  kx = \frac{2\pi}\lambda x = m\pi
 \]</span></p>
 <p><span class="math inline">\(\therefore x = m\frac{\lambda}2\)</span> is the <span class="math inline">\((m+1)th\)</span> node, where m starts from zero.</p>
@@ -281,13 +298,20 @@ y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi) = -2A \sin(kx) \si
 <p>A standing wave between two fixed ends must have a node at both ends, so the first end must be at <span class="math inline">\(x = 0\)</span>, the <em>harmonic</em> of the standing wave depends on the position of the second end.</p>
 <p><strong>The Fundamental Harmonic</strong> occurs when the second end is at the second node and separated by <span class="math inline">\(L = \frac{\lambda}2\)</span> from the first end, which means there is only one loop, two nodes, and one anti-node.</p>
 <p><strong>The <span class="math inline">\(\textbf{nth}\)</span> Harmonic</strong> occurs when the second end is at the <span class="math inline">\((n+1)th\)</span> node and separated by <span class="math inline">\(L = \frac{n \lambda}2\)</span> from the first node, which means there are <span class="math inline">\(n\)</span> loops, <span class="math inline">\((n+1)\)</span> nodes, and <span class="math inline">\(n\)</span> anti-nodes.</p>
+</section>
+</section>
+<section id="thin-film" class="level2">
+<h2 class="anchored" data-anchor-id="thin-film">Thin Film</h2>
+<p>A light ray traveling through a medium of refractive index <span class="math inline">\(n_1\)</span> falls perpendicularly on a thin film of thickness <span class="math inline">\(t\)</span> and refractive index <span class="math inline">\(n_2\)</span> which’s placed between two mediums of refractive indexes <span class="math inline">\(n_1\)</span> &amp; <span class="math inline">\(n_3\)</span>, the ray reflected off the thin film and the ray reflected off medium <span class="math inline">\(3\)</span> will interfere such that <span class="math inline">\(\Delta \phi = k \cdot 2t = \frac{2\pi}\lambda \cdot 2t\)</span>.</p>
+<p>If <span class="math inline">\(n_2 &gt; n_1\)</span> XOR <span class="math inline">\(n_3 &gt; n_2\)</span>, The two rays will also have an additional phase difference of <span class="math inline">\(\pi\)</span>, so <span class="math inline">\(\Delta \phi = k \cdot 2t + \pi= \frac{2\pi}\lambda \cdot 2t +\pi\)</span>.</p>
+<p>For example, if <span class="math inline">\(n_2 &gt; n_1, n_3\)</span> then to achieve destructive interference for coating, we find the thickness of the film such that <span class="math inline">\(\Delta \phi = \frac{2\pi}\lambda \cdot 2t +\pi = 2\pi \cdot (m + \frac{1}2)\)</span>.</p>
+<p>However if <span class="math inline">\(n_3 &gt; n_2 &gt; n_1\)</span> then the phase difference <span class="math inline">\(\Delta \phi = \frac{2\pi}\lambda \cdot 2t = 2\pi \cdot (m + \frac{1}2)\)</span> in the case of destructive interference.</p>
 <p><br> <br></p>
 <p><span class="math display">\[
 M \phi z \alpha
 \]</span></p>
 
 
-</section>
 </section>
 </section>
 
