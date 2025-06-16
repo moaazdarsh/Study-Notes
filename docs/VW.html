@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="14c2addc" class="cell" data-execution_count="1">
+<div id="c3fcdc39" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -196,7 +196,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="511f8f23" class="cell" data-execution_count="2">
+<div id="93e76b0c" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -211,7 +211,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="12857a25" class="cell" data-execution_count="3">
+<div id="33f29322" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -251,7 +251,7 @@ P = 2 \pi^2 \rho S v f^2 A^2
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="d9ef32ee" class="cell" data-execution_count="4">
+<div id="17f69330" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -306,10 +306,16 @@ y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi)
 <h3 class="anchored" data-anchor-id="thin-film">Thin Film</h3>
 <p>A light ray traveling through a medium of refractive index <span class="math inline">\(n_1\)</span> falls perpendicularly on a thin film of thickness <span class="math inline">\(t\)</span> and refractive index <span class="math inline">\(n_2\)</span> which’s placed between two mediums of refractive indexes <span class="math inline">\(n_1\)</span> &amp; <span class="math inline">\(n_3\)</span>, the ray reflected off the thin film and the ray reflected off medium <span class="math inline">\(3\)</span> will interfere such that <span class="math inline">\(\Delta \phi = k \cdot 2t = \frac{2\pi}\lambda \cdot 2t\)</span>.</p>
 <p>If <span class="math inline">\(n_2 &gt; n_1\)</span> XOR <span class="math inline">\(n_3 &gt; n_2\)</span>, The two rays will also have an additional phase difference of <span class="math inline">\(\pi\)</span>, so <span class="math inline">\(\Delta \phi = k \cdot 2t + \pi= \frac{2\pi}\lambda \cdot 2t +\pi\)</span>.</p>
-<p>For example, if <span class="math inline">\(n_2 &gt; n_1, n_3\)</span> then to achieve destructive interference, we find the thickness of the film such that <span class="math inline">\(\Delta \phi = \frac{2\pi}\lambda \cdot 2t +\pi = (2m + 1)\pi\)</span>.</p>
-<p><span class="math inline">\(t = m \cdot \frac{\lambda}2\)</span>, for minimum thickness <span class="math inline">\(m = 1\)</span>.</p>
-<p>However if <span class="math inline">\(n_3 &gt; n_2 &gt; n_1\)</span> in the case of coating then the phase difference <span class="math inline">\(\Delta \phi = \frac{2\pi}\lambda \cdot 2t = (2m + 1)\pi\)</span> in the case of destructive interference.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="thin-film.png" class="img-fluid figure-img"></p>
+<figcaption>Thin Film Experiment - Pearson Education</figcaption>
+</figure>
+</div>
+<p>For example, if <span class="math inline">\(n_3 &gt; n_2 &gt; n_1\)</span> in the case of coating then the phase difference <span class="math inline">\(\Delta \phi = \frac{2\pi}\lambda \cdot 2t = (2m + 1)\pi\)</span> in the case of destructive interference.</p>
 <p><span class="math inline">\(t = (2m + 1) \cdot \frac{\lambda}4\)</span>, for minimum thickness <span class="math inline">\(m = 0\)</span>.</p>
+<p>However, if <span class="math inline">\(n_2 &gt; n_1, n_3\)</span> then to achieve destructive interference, we find the thickness of the film such that <span class="math inline">\(\Delta \phi = \frac{2\pi}\lambda \cdot 2t +\pi = (2m + 1)\pi\)</span>.</p>
+<p><span class="math inline">\(t = m \cdot \frac{\lambda}2\)</span>, for minimum thickness <span class="math inline">\(m = 1\)</span>.</p>
 </section>
 <section id="optical-wedge" class="level3">
 <h3 class="anchored" data-anchor-id="optical-wedge">Optical Wedge</h3>
@@ -318,6 +324,25 @@ y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi)
 <p><span class="math display">\[
 x_{dark} = \frac{m \lambda_{wedge}}2 \cot(\theta) = \frac{m \lambda_0}{2 n_{wedge}} \cot(\theta)
 \]</span></p>
+</section>
+<section id="double-slit-diffraction" class="level3">
+<h3 class="anchored" data-anchor-id="double-slit-diffraction">Double Slit Diffraction</h3>
+<p>When light from a monochromatic source goes through two <em>very small</em> slits separated by a distance <span class="math inline">\(d\)</span>, the two produced waves fall on the screen at a distance <span class="math inline">\(L&gt;&gt;d\)</span> forming the very famous interference pattern.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Double.png" class="img-fluid figure-img"></p>
+<figcaption>Double Slit Experiment - Pearson Education</figcaption>
+</figure>
+</div>
+<p>The phase difference between the two waves <span class="math inline">\(\delta = \frac{2\pi}\lambda d\sin(\theta)\)</span>, for bright fringes <span class="math inline">\(\delta = m \cdot 2\pi\)</span>, bright fringes start at <span class="math inline">\(m = 1\)</span>, excluding the central fringe.</p>
+<p><span class="math display">\[
+d \sin(\theta) = m \lambda
+\]</span></p>
+<p>For dark fringes <span class="math inline">\(\delta = (2m + 1)\pi\)</span>, the first dark fringe starts at <span class="math inline">\(m = 0\)</span>.</p>
+<p><span class="math display">\[
+d \sin(\theta) = (2m + 1) \frac{\lambda}2
+\]</span></p>
+<p><strong>Note:</strong> for small angles we can approximate <span class="math inline">\(\sin(\theta) \approx \theta_{rad} \approx \tan(\theta) = \frac{y}L\)</span></p>
 </section>
 <section id="single-slit-diffraction" class="level3">
 <h3 class="anchored" data-anchor-id="single-slit-diffraction">Single Slit Diffraction</h3>
@@ -328,7 +353,7 @@ x_{dark} = \frac{m \lambda_{wedge}}2 \cot(\theta) = \frac{m \lambda_0}{2 n_{wedg
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Single.png" class="img-fluid figure-img"></p>
-<figcaption>Single Slit Experiment</figcaption>
+<figcaption>Single Slit Experiment - Pearson Education</figcaption>
 </figure>
 </div>
 <p>Using Huygens’ principle, we find that all of the wavelet sources interfere to produce the pattern, the distance between each two consecutive sources being <span class="math inline">\(\Delta y = \frac{a}n\)</span>, and the phase difference <span class="math inline">\(\delta = \frac{2\pi}{\lambda} \Delta y \sin(\theta) =  \frac{2\pi a}{\lambda n} \sin(\theta)\)</span>, the resultant of all the wavelets would be:</p>
@@ -344,6 +369,11 @@ A_R = nA \frac{\sin(\beta/2)}{\beta/2} = A_0 \frac{\sin(\beta/2)}{\beta/2}
 <p>Since the <strong>Intensity</strong> <span class="math inline">\(I \propto A^2\)</span>. <span class="math display">\[
 I = I_0 \frac{\sin^2(\beta/2)}{(\beta/2)^2}
 \]</span></p>
+<p>For dark fringes <span class="math inline">\(I = 0, \; \therefore \frac{\beta}2 = \frac{\pi a}{\lambda} \sin(\theta) = m \pi\)</span></p>
+<p><span class="math display">\[
+a\sin(\theta) = m \lambda
+\]</span></p>
+<p>Where <span class="math inline">\(m \in \{1,2,3, ...\}\)</span>.</p>
 <p><br> <br></p>
 <p><span class="math display">\[
 M \phi z \alpha
