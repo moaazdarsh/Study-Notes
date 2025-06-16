@@ -99,16 +99,16 @@ window.Quarto = {
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-search-results"></div>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="ef8efd18" class="cell" data-execution_count="1">
+<div id="44a7bb8a" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -196,7 +196,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="714d9593" class="cell" data-execution_count="2">
+<div id="846568fd" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -211,7 +211,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="a81c86e9" class="cell" data-execution_count="3">
+<div id="d33793ae" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -251,7 +251,7 @@ P = 2 \pi^2 \rho S v f^2 A^2
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="a22740ff" class="cell" data-execution_count="4">
+<div id="1bd15ee8" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -323,11 +323,13 @@ x_{dark} = \frac{m \lambda_{wedge}}2 \cot(\theta) = \frac{m \lambda_0}{2 n_{wedg
 <h3 class="anchored" data-anchor-id="single-slit-diffraction">Single Slit Diffraction</h3>
 <section id="huygens-principle" class="level4">
 <h4 class="anchored" data-anchor-id="huygens-principle">Huygens’ Principle</h4>
-<p>Instead of modelling light as a stream of particles, Huygens’ Principle states that every wavefront contains an infinite number of spherical wavelet sources which in turn interfere to form the following wavefront.</p>
+<p>Instead of modelling light as a stream of particles, Huygens’ Principle states that every wavefront contains an infinite number of spherical wavelet sources, which in turn interfere with each other to form the following wavefront.</p>
 <p>When light goes through a slit of width <span class="math inline">\(a \approx \lambda\)</span> to fall on a screen at a distance <span class="math inline">\(L &gt;&gt; a\)</span>, an interference pattern is observed.</p>
 <p>Using Huygens’ principle, we find that all of the wavelet sources interfere to produce the pattern, the distance between each two consecutive sources being <span class="math inline">\(\Delta y = \frac{a}n\)</span>, and the phase difference <span class="math inline">\(\delta = \frac{2\pi}{\lambda} \Delta y \sin(\theta) =  \frac{2\pi a}{\lambda n} \sin(\theta)\)</span>, the resultant of all the wavelets would be:</p>
 <p><span class="math display">\[
-x_1 + x_2 + x_3 + ... = A \cos(\omega t + \delta) + A \cos(\omega t + 2 \delta) + A \cos(\omega t + 3 \delta) + ...
+x_R = x_1 + x_2 + x_3 + ...
+\]</span> <span class="math display">\[
+= A \cos(\omega t + \delta) + A \cos(\omega t + 2 \delta) + A \cos(\omega t + 3 \delta) + ...
 \]</span></p>
 <p>The amplitude of the resultant <span class="math inline">\(A_R = A \frac{\sin(n\delta/2)}{\sin(\delta/2)} \approx A \frac{\sin(n\delta/2)}{\delta/2}\)</span>, this can rewritten in terms of the phase difference between the first and last wavelets <span class="math inline">\(\beta = n\delta = \frac{2\pi a}{\lambda} \sin(\theta)\)</span>.</p>
 <p><span class="math display">\[
