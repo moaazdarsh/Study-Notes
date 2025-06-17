@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="e22fbef9" class="cell" data-execution_count="1">
+<div id="b2643a99" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -196,7 +196,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="02bba42c" class="cell" data-execution_count="2">
+<div id="7ccd4cb0" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -211,7 +211,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="269162e8" class="cell" data-execution_count="3">
+<div id="ca5b82a7" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -251,7 +251,7 @@ P = 2 \pi^2 \rho S v f^2 A^2
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="d689d41c" class="cell" data-execution_count="4">
+<div id="ca8d463c" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -343,13 +343,20 @@ d \sin(\theta) = m \lambda
 d \sin(\theta) = (2m + 1) \frac{\lambda}2
 \]</span></p>
 <p><strong>Note:</strong> for small angles we can approximate <span class="math inline">\(\sin(\theta) \approx \theta_{rad} \approx \tan(\theta) = \frac{y}L\)</span></p>
+<p>Using a phasor to find the amplitude of the resultant we can apply the cosine rule:</p>
+<p><span class="math display">\[
+A_r = \sqrt{2A^2 + 2A^2 \cos(\delta)} = 2A \cos(\frac{\delta}2)
+\]</span></p>
+<p>Since the <strong>intensity</strong> <span class="math inline">\(I \propto A^2\)</span>. <span class="math display">\[
+I = I_0 \cos^2(\frac{\delta}2)
+\]</span></p>
 </section>
 <section id="single-slit-diffraction" class="level3">
 <h3 class="anchored" data-anchor-id="single-slit-diffraction">Single Slit Diffraction</h3>
 <section id="huygens-principle" class="level4">
 <h4 class="anchored" data-anchor-id="huygens-principle">Huygens’ Principle</h4>
 <p>Instead of modelling light as a stream of particles, Huygens’ Principle states that every wavefront contains an infinite number of spherical wavelet sources, which in turn interfere with each other to form the following wavefront.</p>
-<p>When light goes through a slit of width <span class="math inline">\(a \approx \lambda\)</span> to fall on a screen at a distance <span class="math inline">\(L &gt;&gt; a\)</span>, an interference pattern is observed.</p>
+<p>When light goes through a slit of width <span class="math inline">\(a \approx \lambda\)</span> to fall on a screen at a distance <span class="math inline">\(L &gt;&gt; a\)</span>, an interference pattern with narrow dark fringes is observed.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Single.png" class="img-fluid figure-img"></p>
@@ -366,21 +373,29 @@ x_R = x_1 + x_2 + x_3 + ...
 <p><span class="math display">\[
 A_R = nA \frac{\sin(\beta/2)}{\beta/2} = A_0 \frac{\sin(\beta/2)}{\beta/2}
 \]</span></p>
-<p>Since the <strong>Intensity</strong> <span class="math inline">\(I \propto A^2\)</span>. <span class="math display">\[
+<p>Since the <strong>intensity</strong> <span class="math inline">\(I \propto A^2\)</span>. <span class="math display">\[
 I = I_0 \frac{\sin^2(\beta/2)}{(\beta/2)^2}
 \]</span></p>
-<p>For dark fringes <span class="math inline">\(I = 0, \; \therefore \frac{\beta}2 = \frac{\pi a}{\lambda} \sin(\theta) = m \pi\)</span></p>
+<p>To find the <span class="math inline">\(mth\)</span> dark fringe <span class="math inline">\(I = 0, \; \therefore \frac{\beta}2 = \frac{\pi a}{\lambda} \sin(\theta) = m \pi\)</span></p>
 <p><span class="math display">\[
 a\sin(\theta) = m \lambda
 \]</span></p>
 <p>Where <span class="math inline">\(m \in \{1,2,3, ...\}\)</span>.</p>
+</section>
+</section>
+<section id="diffraction-grating" class="level3">
+<h3 class="anchored" data-anchor-id="diffraction-grating">Diffraction Grating</h3>
+<p>When light goes through multiple <em>very small</em> slits, each two consecutive slits separated by a distance <span class="math inline">\(d\)</span>, and falls on a screen at a distance <span class="math inline">\(L\)</span>, an interference pattern with narrow bright fringes is formed, to find the <span class="math inline">\(mth\)</span> bright fringe set the phase difference <span class="math inline">\(\delta = \frac{2\pi}\lambda d\sin(\theta) = m \cdot 2\pi\)</span>.</p>
+<p><span class="math display">\[
+d\sin(\theta) = m\lambda
+\]</span></p>
+<p>Since the angle of the fringe <span class="math inline">\(\theta\)</span> depends on the wavelength <span class="math inline">\(\lambda\)</span>, every color is spaced differently which means that the full spectrum can be observed at each value of <span class="math inline">\(m\)</span> when a white light source is used, except at <span class="math inline">\(m = 0\)</span> where <span class="math inline">\(\theta = 0\)</span> for all values of <span class="math inline">\(\lambda\)</span> so all colors fall at the center of the screen and a white fringe is observed.</p>
 <p><br> <br></p>
 <p><span class="math display">\[
 M \phi z \alpha
 \]</span></p>
 
 
-</section>
 </section>
 </section>
 </section>
