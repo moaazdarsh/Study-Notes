@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="52152ec9" class="cell" data-execution_count="1">
+<div id="822b83bb" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -178,7 +178,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 <p>solving this differential equation we get</p>
 <p><span class="math inline">\(x = A \cos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{m\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\gamma \Omega)^2}}\)</span> and <span class="math inline">\(\phi = \tan^{-1}( \frac{2\gamma \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
 <p>Graphing <span class="math inline">\(A(\Omega)\)</span> we get the following curve which a maximum value for the amplitude depending on the driving frequency.</p>
-<div id="d5453028" class="cell" data-execution_count="2">
+<div id="77f7f540" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -206,7 +206,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="589f3f97" class="cell" data-execution_count="3">
+<div id="a66f6987" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -221,7 +221,7 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="63fca5c9" class="cell" data-execution_count="4">
+<div id="000a2667" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -260,7 +260,7 @@ P = 2 \pi^2 \rho S v f^2 A^2
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="cf929498" class="cell" data-execution_count="5">
+<div id="e8ce4d53" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -304,8 +304,8 @@ y_1 + y_2 = A \cos(kx-\omega t) + A \cos(kx + \omega t + \pi)
 <section id="harmonics" class="level3">
 <h3 class="anchored" data-anchor-id="harmonics">Harmonics</h3>
 <p>A standing wave between two fixed ends must have a node at both ends, the first end of the rope is at <span class="math inline">\(x = 0\)</span> where the first node is, the <em>harmonic</em> of the standing wave depends on the position of the second end of the rope.</p>
-<p><strong>The Fundamental Harmonic</strong> occurs when the second end of the rope is at the second node and separated by <span class="math inline">\(L = \frac{\lambda}2\)</span> from the first end, which means there is only one loop, two nodes, and one anti-node.</p>
-<p><strong>The <span class="math inline">\(\textbf{nth}\)</span> Harmonic</strong> occurs when the second end of the rope is at the <span class="math inline">\((n+1)th\)</span> node and separated by <span class="math inline">\(L = \frac{n \lambda}2\)</span> from the first node, which means there are <span class="math inline">\(n\)</span> loops, <span class="math inline">\((n+1)\)</span> nodes, and <span class="math inline">\(n\)</span> anti-nodes.</p>
+<p><strong>The Fundamental Harmonic</strong> occurs when the second end of the rope is at the second node and <span class="math inline">\(\lambda = 2L\)</span>, where <span class="math inline">\(L\)</span> is the length of the rope, since <span class="math inline">\(v = \sqrt{\frac{T}{\mu}}\)</span> the fundamental frequency <span class="math inline">\(f = \frac{v}{\lambda} = \frac{1}{2L} \sqrt{\frac{T}{\mu}}\)</span>, in which case there is only one loop, two nodes, and one anti-node.</p>
+<p><strong>The <span class="math inline">\(\textbf{nth}\)</span> Harmonic</strong> occurs when the second end of the rope is at the <span class="math inline">\((n+1)th\)</span> node and <span class="math inline">\(\lambda = \frac{2}n L\)</span>, since <span class="math inline">\(v = \sqrt{\frac{T}{\mu}}\)</span> the frequency <span class="math inline">\(f = \frac{v}{\lambda} = \frac{n}{2L} \sqrt{\frac{T}{\mu}}\)</span>, in which case there are <span class="math inline">\(n\)</span> loops, <span class="math inline">\((n+1)\)</span> nodes, and <span class="math inline">\(n\)</span> anti-nodes.</p>
 </section>
 </section>
 <section id="diffraction-interference-experiments" class="level2">
