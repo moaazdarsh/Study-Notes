@@ -144,7 +144,7 @@ m \ddot{x} = -kx - b \dot{x}
 <p>Where the damping is’t enough to prevent oscillation. <span class="math display">\[
 x = A_0 e^{-\gamma t}\cos(\omega_d t + \phi)
 \]</span> Where <span class="math inline">\(\gamma = \frac{b}{2m}\)</span> and <span class="math inline">\(\omega_d = \sqrt{\omega_0^2 + \gamma^2}\)</span> is the damped frequency.</p>
-<div id="4aa71ff8" class="cell" data-execution_count="1">
+<div id="52152ec9" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -177,6 +177,16 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \]</span></p>
 <p>solving this differential equation we get</p>
 <p><span class="math inline">\(x = A \cos(\Omega t - \phi)\)</span>, where <span class="math inline">\(A(\Omega) = \frac{F_0}{m\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\gamma \Omega)^2}}\)</span> and <span class="math inline">\(\phi = \tan^{-1}( \frac{2\gamma \Omega}{\omega_0^2 - \Omega^2})\)</span>.</p>
+<p>Graphing <span class="math inline">\(A(\Omega)\)</span> we get the following curve which a maximum value for the amplitude depending on the driving frequency.</p>
+<div id="d5453028" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="VW_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>the frequency of applied force that will result in the greatest amplitude is <span class="math inline">\(\Omega_A = \sqrt{\omega_0^2 -2\gamma^2}\)</span> and that maximum amplitude is <span class="math inline">\(A = \frac{F_0}{r \sqrt{\omega_0^2 -\gamma^2}}\)</span>.</p>
 <p>if we want the spring to oscillate at maximum velocity however, then <span class="math inline">\(\Omega = \omega_0\)</span>, the amplitude <span class="math inline">\(A = \frac{F_0}{r\omega_0}\)</span>, and <span class="math inline">\(v_{max} = \frac{F_0}b\)</span>.</p>
 </section>
@@ -196,11 +206,11 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 \frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 \]</span></p>
 <p>A case of such wave equation is <span class="math inline">\(y(x,t) = \frac{A}{(x - vt)^2 + 1}\)</span>, which describes a pulse moving through a medium such as a rope for example.</p>
-<div id="ea1f1869" class="cell" data-execution_count="2">
+<div id="589f3f97" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="VW_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="VW_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -211,11 +221,11 @@ m\ddot{x}  + k_s x + b\dot{x} = F_0 \cos(\Omega t)
 y(x,t) = A \cos(kx-\omega t) = A \cos(k(x-vt))
 \]</span></p>
 <p>where <span class="math inline">\(\omega = \frac{2\pi}T\)</span> and <span class="math inline">\(k = \frac{2\pi}\lambda\)</span>.</p>
-<div id="39915261" class="cell" data-execution_count="3">
+<div id="63fca5c9" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="VW_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="VW_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -250,11 +260,11 @@ P = 2 \pi^2 \rho S v f^2 A^2
 <p><span class="math display">\[
 D (x,t) = 2A \cos(\frac{|\omega_1 - \omega_2|}2 t - kx) \cos(\frac{|\omega_1 + \omega_2|}2 t - kx)
 \]</span></p>
-<div id="e3417b9b" class="cell" data-execution_count="4">
+<div id="cf929498" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="VW_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="VW_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
