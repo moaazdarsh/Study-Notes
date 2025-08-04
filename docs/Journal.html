@@ -166,7 +166,7 @@ P = P_0 e^{kt}
 <section id="exponential-growth-sim." class="level3">
 <h3 class="anchored" data-anchor-id="exponential-growth-sim.">Exponential Growth Sim.</h3>
 <p>Before making the simulation we must set certain constants and useful variables.</p>
-<div id="9b819ed8" class="cell" data-execution_count="2">
+<div id="4edae86e" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Q <span class="op">=</span> <span class="fl">0.02</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>LS <span class="op">=</span> <span class="dv">100</span></span>
@@ -179,7 +179,7 @@ P = P_0 e^{kt}
 </div>
 <p>First the previously mentioned reproduction probability <code>Q</code>, <code>LS</code> is the lifespan of individuals, <code>P</code> is a list of all individuals each represented by their time to live, the population size is logged in the list <code>PLog</code>, and <code>T</code> is the number of iterations.</p>
 <p>Afterwards, we write the simulation’s loop, inside which there’s a variable <code>NewIndividuals</code> to count the number of individuals “born” in the next iteration, and a list <code>deaths</code> to contain the indices (in <code>P</code>) of the specific individuals that should “die” after this iteration.</p>
-<div id="acf76592" class="cell" data-execution_count="3">
+<div id="70d38aaa" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> DeltaT <span class="kw">in</span> <span class="bu">range</span>(T):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    NewIndividuals <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    deaths <span class="op">=</span> []</span>
@@ -203,7 +203,7 @@ P = P_0 e^{kt}
 </div>
 <p>Then we loop through <code>P</code> and give every individual a probability <code>Q</code> to reproduce, if so, we add 1 to <code>NewIndividuals</code>, every individual’s life decreases and then we check their life has ended to add them to <code>deaths</code>.</p>
 <p>After all the iterations we can graph the population using matplotlib.</p>
-<div id="db9222bf" class="cell" data-execution_count="4">
+<div id="bb6ec353" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>W, graph <span class="op">=</span> plt.subplots()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>graph.plot(<span class="bu">range</span>(T), PLog)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -231,7 +231,7 @@ P = \frac{C}{1 + Ae^{-kt}}
 <section id="logistic-growth-model-sim." class="level3">
 <h3 class="anchored" data-anchor-id="logistic-growth-model-sim.">Logistic Growth Model Sim.</h3>
 <p>The following simulation isn’t very different from the previous one, we’ll only need to introduce the new variable <code>food</code>, and tweak the previously introduced constants to get a nice and possibly realistic graph.</p>
-<div id="da49d2b3" class="cell" data-execution_count="5">
+<div id="193c55f5" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Q <span class="op">=</span> <span class="fl">0.008</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>LS <span class="op">=</span> <span class="dv">100</span></span>
@@ -246,7 +246,7 @@ P = \frac{C}{1 + Ae^{-kt}}
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> <span class="dv">2500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then in the simulation loop we’ll have to replenish the food every iteration, and make the chance of finding food inversely proportional to scarcity, then extend the lifetime of individuals that can find food.</p>
-<div id="0ff1a8c6" class="cell" data-execution_count="6">
+<div id="f54bff76" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> DeltaT <span class="kw">in</span> <span class="bu">range</span>(T):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    food <span class="op">+=</span> random.randint(<span class="dv">0</span>, <span class="dv">20</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
