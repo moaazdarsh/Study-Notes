@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+
+
+\begin{document}
+\section*{Basic Analysis by Jiri Lebl}
+\subsection*{Exercise 3.1.10}
+Suppose that $f: \mathbb{R} \rightarrow \mathbb{R}$ is a function such that $\forall \{x_n\}_{n=1}^{\infty}$ in $\mathbb{R}$, the sequence $\{f(x_n)\}_{n=1}^{\infty}$ converges.
+Prove that $f$ is constant, that is, $f(x) = f(y)$ for all $x,y \in \mathbb{R}$.
+\begin{proof}
+\
+
+\noindent
+First let us construct a sequence $\{x_n\}_{n=1}^{\infty}$ that is equal to some value $a \in \mathbb{R}$ when $n$ is odd and equal to $b \in \mathbb{R}$ when $n$ is even.\footnote{A formula for such a function can be $x_n = \max(0, (-1)^{n-1})a + \max(0, (-1)^n)b$ or $x_n = \frac{1}{2}(a + b + (-1)^n (b-a))$}
+
+\noindent
+We know that $\{f(x_n)\}_{n=1}^{\infty}$ converges, so given any $\epsilon > 0$, $\exists N$ such that $|f(x_n) - f(x_m)| < \epsilon, \; \forall n,m \geq N$.
+Since $f(x_n)$ can only be $f(a)$ or $f(b)$, there must be some $n,m \geq N$ where $f(x_n) = f(a)$ and $f(x_m) = f(b)$ (or vice versa).
+So $|f(a) - f(b)| < \epsilon$ for any $\epsilon > 0$, which means $f(a) = f(b)$.
+
+\noindent
+And since the sequence $\{x_n\}_{n=1}^{\infty}$ can be constructed for any $a,b \in \mathbb{R}$ then the function $f$ is constant.
+
+\end{proof} 
+
+\end{document}
